@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayCanvas 3D Viewer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Full-screen PlayCanvas Iframe -->
+    <iframe id="playcanvas-iframe" src="https://playcanv.as/e/p/492ee09e/"
+        allow="autoplay; fullscreen; xr-spatial-tracking"></iframe>
+
+    <!-- Hover-activated Side Slider (Now on Left) -->
+    <div class="side-slider">
+        <div class="slider-handle">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="slider-content">
+            <div class="button-group">
+                <button class="control-btn" onclick="sendMessage('Availability')">
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <span>Availability</span>
+                </button>
+                <button class="control-btn" onclick="sendMessage('EastFlats')">
+                    <i class="fa-solid fa-building"></i>
+                    <span>East Flats</span>
+                </button>
+                <button class="control-btn" onclick="sendMessage('WestFlats')">
+                    <i class="fa-solid fa-city"></i>
+                    <span>West Flats</span>
+                </button>
+                <button class="control-btn" onclick="sendMessage('FloorPlan')">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Floor Plan</span>
+                </button>
+                <button class="control-btn" onclick="sendMessage('CornerFlats')">
+                    <i class="fa-solid fa-vector-square"></i>
+                    <span>Corner Flats</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
